@@ -8,6 +8,10 @@
 
 <ion-content>
   <div class="ion-padding">
-    <ion-button href = "sobre"> Go Training </ion-button>
+    <ion-input [(ngModel)]="login.nome"> Nome: </ion-input>
+    <ion-input [(ngModel)]="login.senha"> Senha: </ion-input>
+    <ion-button expand="full" color="danger" (click)="salvar()"> Salvar login </ion-button>
+    <ion-button expand="full" color="danger" href="exercicio"> Próximo </ion-button>
+    <ion-button expand="full" color="danger" href="cadastro"> Cadastrar-se</ion-button>
   </div>
 </ion-content>

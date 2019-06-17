@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireDatabaseModule} from '@angular/fire/database';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
@@ -15,11 +17,22 @@ import {ExercicioComponent} from './componentes/exercicio/exercicio.component';
 import {CalendarioComponent} from './componentes/calendario/calendario.component';
 import {LoginecadastroComponent} from './componentes/loginecadastro/loginecadastro.component';
 import { FormsModule } from '@angular/forms';
+import { SugestoesComponent } from './componentes/sugestoes/sugestoes.component';
 
 @NgModule({
-  declarations: [AppComponent, CadastroComponent, LoginComponent, ExercicioComponent, CalendarioComponent, SobreComponent, LoginecadastroComponent],
+  declarations: [AppComponent, CadastroComponent, LoginComponent, ExercicioComponent, CalendarioComponent, SobreComponent, LoginecadastroComponent, SugestoesComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule,
+    AngularFireModule.initializeApp({
+      apiKey: "AIzaSyCkbmaOawLWV7VlFboPfAOt1DbrfFf0p4c",
+        authDomain: "exercicios-5d643.firebaseapp.com",
+        databaseURL: "https://exercicios-5d643.firebaseio.com",
+        projectId: "exercicios-5d643",
+        storageBucket: "exercicios-5d643.appspot.com",
+        messagingSenderId: "327384361915",
+        appId: "1:327384361915:web:b370501dad9462de"
+    }), AngularFireDatabaseModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,

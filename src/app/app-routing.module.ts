@@ -6,6 +6,7 @@ import { SobreComponent } from './componentes/sobre/sobre.component';
 import { CalendarioComponent } from './componentes/calendario/calendario.component';
 import {ExercicioComponent} from './componentes/exercicio/exercicio.component';
 import {LoginecadastroComponent} from './componentes/loginecadastro/loginecadastro.component';
+import {SugestoesComponent} from './/componentes/sugestoes/sugestoes.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,7 +17,7 @@ const routes: Routes = [
   { path: 'calendario', component: CalendarioComponent},
   { path: 'sobre', component: SobreComponent},
   { path: 'loginecadastro', component: LoginecadastroComponent},
-
+  {path: 'sugestoes', component: SugestoesComponent},
 ];
 
 @NgModule({
