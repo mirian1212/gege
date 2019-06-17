@@ -1,4 +1,4 @@
-export class Cadastro{
+export class Pessoa{
 nome:string;
 email:string;
 senha: number;

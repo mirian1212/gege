@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Cadastro } from './entidade/cadastro';
+import { Pessoa} from './entidade/pessoa';
 import { AngularFireDatabase } from '@angular/fire/database';
 
 @Component({
@@ -9,7 +9,7 @@ import { AngularFireDatabase } from '@angular/fire/database';
 
 export class CadastroComponent {
 
-  cadastro: Cadastro = new Cadastro();
+  cadastro: Pessoa= new Pessoa();
 
   constructor(private banco: AngularFireDatabase) { }
 
@@ -17,7 +17,7 @@ export class CadastroComponent {
 
   Cadastro() {
     this.banco.list('cadastro').push(this.cadastro);
-    this.cadastro = new Cadastro();
+    this.cadastro = new Pessoa();
     alert('Salvo com sucesso!');
   }
 
