@@ -19,9 +19,10 @@ import {LoginecadastroComponent} from './componentes/loginecadastro/loginecadast
 import { FormsModule } from '@angular/forms';
 import { SugestoesComponent } from './componentes/sugestoes/sugestoes.component';
 import {ListarPage} from './/componentes/cadastro/listar/listar.page';
+import {ListarSugestoesComponent} from './componentes/sugestoes/listar-sugestoes/listar-sugestoes.component';
 
 @NgModule({
-  declarations: [AppComponent, CadastroComponent, LoginComponent, ExercicioComponent, CalendarioComponent, SobreComponent, LoginecadastroComponent, SugestoesComponent, ListarPage],
+  declarations: [AppComponent, CadastroComponent, LoginComponent, ExercicioComponent, CalendarioComponent, SobreComponent, LoginecadastroComponent, SugestoesComponent, ListarPage, ListarSugestoesComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule,
     AngularFireModule.initializeApp({

@@ -8,6 +8,8 @@ import {ExercicioComponent} from './componentes/exercicio/exercicio.component';
 import {LoginecadastroComponent} from './componentes/loginecadastro/loginecadastro.component';
 import {SugestoesComponent} from './/componentes/sugestoes/sugestoes.component';
 import {ListarPage} from './/componentes/cadastro/listar/listar.page';
+import {ListarSugestoesComponent} from './componentes/sugestoes/listar-sugestoes/listar-sugestoes.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
@@ -19,6 +21,7 @@ const routes: Routes = [
   { path: 'loginecadastro', component: LoginecadastroComponent},
   {path: 'sugestoes', component: SugestoesComponent},
   {path: 'listar', component: ListarPage},
+  {path: 'listar-sugestoes', component: ListarSugestoesComponent},
 
 ];
 

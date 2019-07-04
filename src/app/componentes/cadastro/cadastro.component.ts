@@ -5,7 +5,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'cadastro.component',
-  templateUrl: 'cadastro.component.html'
+  templateUrl: 'cadastro.component.html',
+  styleUrls: ['cadastro.component.scss']
 })
 
 export class CadastroComponent {
