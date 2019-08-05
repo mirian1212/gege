@@ -21,7 +21,8 @@ const routes: Routes = [
   { path: 'loginecadastro', component: LoginecadastroComponent},
   {path: 'sugestoes', component: SugestoesComponent},
   {path: 'listar', component: ListarPage},
-  {path: 'listar-sugestoes', component: ListarSugestoesComponent},
+  {path: 'listar-sugestoes', component: ListarSugestoesComponent},  { path: 'pagina', loadChildren: './pagina/pagina.module#PaginaPageModule' },
+
 
 ];
 

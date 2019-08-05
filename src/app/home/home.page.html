@@ -8,13 +8,11 @@
 
 <ion-content>
   <div class="ion-padding">
-    <ion-input [(ngModel)]="login.nome"> Nome: </ion-input>
+    <ion-input [(ngModel)]="login.email"> Email: </ion-input>
     <ion-input [(ngModel)]="login.senha" type= "password"> Senha: </ion-input>
     <h1> </h1>
-    <h1> </h1>
-    <ion-button expand="full" color="danger" (click)="salvar()"> Salvar login </ion-button>
+    <ion-button expand="full" color="danger" (click)="logar()">Acessar</ion-button>
     <ion-button expand="full" color="danger" href="cadastro"> Cadastrar-se </ion-button>
-    <ion-button expand="full" color="danger" href="exercicio"> Próximo </ion-button>
     <ion-button expand="full" color="danger" href= "listar"> Lista </ion-button>
     <h1> </h1>
     <br>
