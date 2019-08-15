@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Opções de exercícios </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-label position="floating">nome</ion-label>
+    <ion-select [(ngModel)]="exercicioss.nome">
+      <ion-select-option *ngFor='let exercicioss of listaExercicioss | async' [value]="string">
+        {{exercicioss.nome}}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-button expand="full" shape="round" (click)="salvar()">salvar</ion-button>
+</ion-content>

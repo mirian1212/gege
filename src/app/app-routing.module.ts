@@ -26,6 +26,9 @@ const routes: Routes = [
   { path: 'cidade-listar', loadChildren: './cidade/cidade-listar/cidade-listar.module#CidadeListarPageModule' },
   { path: 'estado-salvar', loadChildren: './estado/estado-salvar/estado-salvar.module#EstadoSalvarPageModule' },
   { path: 'estado-listar', loadChildren: './estado/estado-listar/estado-listar.module#EstadoListarPageModule' },
+  { path: 'exercicioss', loadChildren: './exercicioss/exercicioss.module#ExerciciossPageModule' },
+  { path: 'listar', loadChildren: './exercicioss/listar/listar.module#ListarPageModule' },
+  { path: 'salvar', loadChildren: './exercicioss/salvar/salvar.module#SalvarPageModule' }
 
 
 ];

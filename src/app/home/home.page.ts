@@ -24,7 +24,7 @@ export class HomePage {
   logar() {
     this.afAuth.auth.signInWithEmailAndPassword(this.login.email, this.login.senha).then(
       () => { this.rota.navigate(['exercicio']); }
-    ).catch((erro) => console.log(erro));
+    ).catch((erro) => alert('Email ou senha errados'));
   }
   logout() {
     this.afAuth.auth.signOut();

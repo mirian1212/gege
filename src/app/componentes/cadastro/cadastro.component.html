@@ -9,41 +9,31 @@
 <ion-content>
   <ion-item>
     <ion-label position="floating"> Nome: </ion-label>
-    <ion-input type="text" [(ngModel)]="cadastro.nome" placeholder="insira o seu nome:"></ion-input>
+    <ion-input type="text" [(ngModel)]="cadastro.nome" placeholder=" "></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="floating"> Telefone: </ion-label>
-    <ion-input type="text" [(ngModel)]="cadastro.telefone" placeholder="insira o seu telefone:">
+    <ion-input type="text" [(ngModel)]="cadastro.telefone" placeholder=" ">
     </ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="floating"> Email: </ion-label>
-    <ion-input type="text" [(ngModel)]="cadastro.email" placeholder="insira o seu email:">
+    <ion-input type="text" [(ngModel)]="cadastro.email" placeholder=" ">
     </ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="floating"> Definir senha: </ion-label>
-    <ion-input type="password" [(ngModel)]="cadastro.senha" placeholder="insira uma senha:">
-    </ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating"> I.M.C: </ion-label>
-    <ion-input type="text" [(ngModel)]="cadastro.imc" placeholder="insira seu I.M.C:">
+    <ion-input type="password" [(ngModel)]="cadastro.senha" placeholder=" ">
     </ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="floating"> Altura </ion-label>
-    <ion-input type="text" [(ngModel)]="cadastro.altura" placeholder="insira sua altura:">
+    <ion-input type="text" [(ngModel)]="cadastro.altura" placeholder="">
     </ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="floating"> Idade: </ion-label>
-    <ion-input type="text" [(ngModel)]="cadastro.idade" placeholder="insira sua idade:">
-    </ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating"> Sexo: </ion-label>
-    <ion-input type="text" [(ngModel)]="cadastro.sexo" placeholder="insira seu sexo:">
+    <ion-input type="text" [(ngModel)]="cadastro.idade" placeholder="">
     </ion-input>
   </ion-item>
   <ion-item>
@@ -58,6 +48,6 @@
       </ion-select-option>
     </ion-select>
   </ion-item>
-  <ion-button (click)="salvar()" expand="full" color="dark"> Salvar</ion-button>
+  <ion-button (click)="Salvar()" expand="full" color="dark"> Salvar</ion-button>
   <ion-button href="/" expand="full" color="dark"> Voltar </ion-button>
 </ion-content>

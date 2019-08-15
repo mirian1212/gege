@@ -6,7 +6,7 @@ import { Estado } from '../../estado/entidade/estado';
 import { Cidade } from '../../cidade/entidade/cidade';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-
+import { AngularFireAuth } from 'angularfire2/auth';
 @Component({
   selector: 'cadastro.component',
   templateUrl: 'cadastro.component.html',
@@ -24,17 +24,15 @@ export class CadastroComponent {
     );
 }
   ngOnInit() { }
-
-  Cadastro() {
+ Cadastro() {
     this.fire.list('estado').push(this.cadastro);
     this.cadastro = new Pessoa();
     this.rota.navigate(['salvar']);
-    alert('Salvo com sucesso!');
-  }
-  Cadastro2() {
-    this.fire.list('cidade').push(this.cidade);
+ }
+  Salvar() {
+    this.fire.list('cadastro').push(this.cadastro);
     this.cadastro = new Pessoa();
-    this.rota.navigate(['salvar']);
+    this.rota.navigate(['exercicio']);
     alert('Salvo com sucesso!');
   }
 }
