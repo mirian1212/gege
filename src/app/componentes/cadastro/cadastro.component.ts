@@ -14,7 +14,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 })
 
 export class CadastroComponent {
-
+  endereco: string
   cadastro: Pessoa = new Pessoa();
   cidade: Cidade = new Cidade();
   listaEstado: Observable<Estado[]>;
@@ -35,4 +35,7 @@ export class CadastroComponent {
     this.rota.navigate(['exercicio']);
     alert('Salvo com sucesso!');
   }
+  Proximo(){
+  this.rota.navigate([this.endereco]);
+}
 }

@@ -20,9 +20,10 @@ import { FormsModule } from '@angular/forms';
 import { SugestoesComponent } from './componentes/sugestoes/sugestoes.component';
 import {ListarPage} from './/componentes/cadastro/listar/listar.page';
 import {ListarSugestoesComponent} from './componentes/sugestoes/listar-sugestoes/listar-sugestoes.component';
-
+import {BarrigaComponent} from './componentes/barriga/barriga.component';
+import {PernasComponent} from './componentes/pernas/pernas.component';
 @NgModule({
-  declarations: [AppComponent, CadastroComponent, LoginComponent, ExercicioComponent, CalendarioComponent, SobreComponent, LoginecadastroComponent, SugestoesComponent, ListarPage, ListarSugestoesComponent],
+  declarations: [AppComponent, CadastroComponent, LoginComponent, ExercicioComponent, CalendarioComponent, SobreComponent, LoginecadastroComponent, SugestoesComponent, ListarPage, ListarSugestoesComponent, BarrigaComponent, PernasComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule,
     AngularFireModule.initializeApp({

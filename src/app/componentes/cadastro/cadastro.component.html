@@ -36,18 +36,15 @@
     <ion-input type="text" [(ngModel)]="cadastro.idade" placeholder="">
     </ion-input>
   </ion-item>
+  <ion-button (click)="Salvar()" expand="full" color="danger"> Salvar</ion-button>
   <ion-item>
-    <ion-label position="floating"> Cidade: </ion-label>
-    <ion-input name="nome" [(ngModel)]="cidade.nome"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating"> Estado: </ion-label>
-    <ion-select [(ngModel)]="cidade.estado">
-      <ion-select-option *ngFor='let estado of listaEstado | async' [value]="estado">
-        {{estado.sigla}}
-      </ion-select-option>
+    <ion-label> Escolha as opções de treino </ion-label>
+    <ion-select [(ngModel)]= "endereco" multiple = "false" okText= "Selecionar">
+    <ion-select-option value= "barriga"> Abdomen </ion-select-option>
+    <ion-select-option value= "pernas"> Pernas e Glúteos</ion-select-option>
+    <ion-select-option value= "panturrilha"> Panturrilha </ion-select-option>
+    <ion-select-option value= "alongamento"> Alongamento </ion-select-option>
     </ion-select>
   </ion-item>
-  <ion-button (click)="Salvar()" expand="full" color="dark"> Salvar</ion-button>
-  <ion-button href="/" expand="full" color="dark"> Voltar </ion-button>
+  <ion-button expand= "full" color="danger" shape = "aroud" (click)= "Proximo()"> Proximo </ion-button>
 </ion-content>

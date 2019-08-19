@@ -9,6 +9,8 @@ import { LoginecadastroComponent } from './componentes/loginecadastro/loginecada
 import { SugestoesComponent } from './/componentes/sugestoes/sugestoes.component';
 import { ListarPage } from './/componentes/cadastro/listar/listar.page';
 import { ListarSugestoesComponent } from './componentes/sugestoes/listar-sugestoes/listar-sugestoes.component';
+import {BarrigaComponent} from './componentes/barriga/barriga.component';
+import {PernasComponent} from './componentes/pernas/pernas.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -28,8 +30,9 @@ const routes: Routes = [
   { path: 'estado-listar', loadChildren: './estado/estado-listar/estado-listar.module#EstadoListarPageModule' },
   { path: 'exercicioss', loadChildren: './exercicioss/exercicioss.module#ExerciciossPageModule' },
   { path: 'listar', loadChildren: './exercicioss/listar/listar.module#ListarPageModule' },
-  { path: 'salvar', loadChildren: './exercicioss/salvar/salvar.module#SalvarPageModule' }
-
+  { path: 'salvar', loadChildren: './exercicioss/salvar/salvar.module#SalvarPageModule' },
+  { path: 'barriga', component : BarrigaComponent},
+  {path: 'pernas', component: PernasComponent}
 
 ];
 
