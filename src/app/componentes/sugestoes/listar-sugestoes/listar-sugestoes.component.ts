@@ -10,13 +10,16 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./listar-sugestoes.component.scss'],
 })
 export class ListarSugestoesComponent implements OnInit {
-    listaUsuario: Observable<Sugestoes[]>;
+  listaUsuario: Observable<Sugestoes[]>;
   constructor(private banco: AngularFireDatabase) {
     this.listaUsuario = this.banco.list<Sugestoes>('sugestoes').snapshotChanges().pipe(map(lista => lista.map(linha => ({
-    key: linha.payload.key, ...linha.payload.val()
+      key: linha.payload.key, ...linha.payload.val()
     }))))
   }
 
-  ngOnInit() {}
-
+  ngOnInit() { }
+  excluir(key) {
+    this.banco.list('sugestoes').remove(key);
+    alert("Excluido");
+  }
 }

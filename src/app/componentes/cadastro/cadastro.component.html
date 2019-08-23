@@ -37,13 +37,15 @@
     </ion-input>
   </ion-item>
   <ion-button (click)="Salvar()" expand="full" color="danger"> Salvar</ion-button>
+  <ion-label> Escolha as opções de treino </ion-label>
   <ion-item>
-    <ion-label> Escolha as opções de treino </ion-label>
+    <ion-label> Opções: </ion-label>
     <ion-select [(ngModel)]= "endereco" multiple = "false" okText= "Selecionar">
     <ion-select-option value= "barriga"> Abdomen </ion-select-option>
     <ion-select-option value= "pernas"> Pernas e Glúteos</ion-select-option>
     <ion-select-option value= "panturrilha"> Panturrilha </ion-select-option>
     <ion-select-option value= "alongamento"> Alongamento </ion-select-option>
+    <ion-select-option value= "exercicio"> Pernas, glúteos e abdomen </ion-select-option>
     </ion-select>
   </ion-item>
   <ion-button expand= "full" color="danger" shape = "aroud" (click)= "Proximo()"> Proximo </ion-button>

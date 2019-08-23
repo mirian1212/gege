@@ -30,4 +30,9 @@ export class HomePage {
     this.afAuth.auth.signOut();
     this.rota.navigate(['/']);
   }
+  redefinir(){
+    alert('verifique seu e-mail');
+    this.afAuth.auth.sendPasswordResetEmail(this.login.email).then(
+      () => alert ('verifique seu email')); {this.rota.navigate( [ ]); }
+  }
 }
