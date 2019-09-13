@@ -19,5 +19,4 @@ export class ListarPage implements OnInit {
 
   ngOnInit() {
   }
-
 }

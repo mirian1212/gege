@@ -6,11 +6,11 @@ import { SobreComponent } from './componentes/sobre/sobre.component';
 import { CalendarioComponent } from './componentes/calendario/calendario.component';
 import { ExercicioComponent } from './componentes/exercicio/exercicio.component';
 import { LoginecadastroComponent } from './componentes/loginecadastro/loginecadastro.component';
-import { SugestoesComponent } from './/componentes/sugestoes/sugestoes.component';
 import { ListarPage } from './/componentes/cadastro/listar/listar.page';
 import { ListarSugestoesComponent } from './componentes/sugestoes/listar-sugestoes/listar-sugestoes.component';
 import {BarrigaComponent} from './componentes/barriga/barriga.component';
 import {PernasComponent} from './componentes/pernas/pernas.component';
+import {SalvarSugestoesPage} from './componentes/sugestoes/salvar-sugestoes/salvar-sugestoes.page';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -21,9 +21,12 @@ const routes: Routes = [
   { path: 'calendario', component: CalendarioComponent },
   { path: 'sobre', component: SobreComponent },
   { path: 'loginecadastro', component: LoginecadastroComponent },
-  { path: 'sugestoes', component: SugestoesComponent },
   { path: 'listar', component: ListarPage },
-  { path: 'listar-sugestoes', component: ListarSugestoesComponent },  { path: 'pagina', loadChildren: './pagina/pagina.module#PaginaPageModule' },
+  { path: 'barriga', component : BarrigaComponent},
+  { path: 'pernas', component: PernasComponent},
+  { path: 'listar-sugestoes', component: ListarSugestoesComponent },
+  { path: 'pagina', loadChildren: './pagina/pagina.module#PaginaPageModule' },
+  { path: 'salvar-sugestoes', loadChildren: './componentes/sugestoes/salvar-sugestoes/salvar-sugestoes.module#SalvarSugestoesPageModule' },
   { path: 'cidade-salvar', loadChildren: './cidade/cidade-salvar/cidade-salvar.module#CidadeSalvarPageModule' },
   { path: 'cidade-listar', loadChildren: './cidade/cidade-listar/cidade-listar.module#CidadeListarPageModule' },
   { path: 'estado-salvar', loadChildren: './estado/estado-salvar/estado-salvar.module#EstadoSalvarPageModule' },
@@ -31,8 +34,6 @@ const routes: Routes = [
   { path: 'exercicioss', loadChildren: './exercicioss/exercicioss.module#ExerciciossPageModule' },
   { path: 'listar', loadChildren: './exercicioss/listar/listar.module#ListarPageModule' },
   { path: 'salvar', loadChildren: './exercicioss/salvar/salvar.module#SalvarPageModule' },
-  { path: 'barriga', component : BarrigaComponent},
-  {path: 'pernas', component: PernasComponent}
 
 ];
 

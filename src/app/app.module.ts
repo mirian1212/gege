@@ -17,13 +17,15 @@ import {ExercicioComponent} from './componentes/exercicio/exercicio.component';
 import {CalendarioComponent} from './componentes/calendario/calendario.component';
 import {LoginecadastroComponent} from './componentes/loginecadastro/loginecadastro.component';
 import { FormsModule } from '@angular/forms';
-import { SugestoesComponent } from './componentes/sugestoes/sugestoes.component';
 import {ListarPage} from './/componentes/cadastro/listar/listar.page';
 import {ListarSugestoesComponent} from './componentes/sugestoes/listar-sugestoes/listar-sugestoes.component';
 import {BarrigaComponent} from './componentes/barriga/barriga.component';
 import {PernasComponent} from './componentes/pernas/pernas.component';
+import {SalvarSugestoesPage} from './componentes/sugestoes/salvar-sugestoes/salvar-sugestoes.page';
+
 @NgModule({
-  declarations: [AppComponent, CadastroComponent, LoginComponent, ExercicioComponent, CalendarioComponent, SobreComponent, LoginecadastroComponent, SugestoesComponent, ListarPage, ListarSugestoesComponent, BarrigaComponent, PernasComponent],
+  declarations: [AppComponent, CadastroComponent, LoginComponent, ExercicioComponent, CalendarioComponent,
+    SobreComponent, LoginecadastroComponent,  ListarPage, ListarSugestoesComponent, BarrigaComponent, PernasComponent, SalvarSugestoesPage],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule,
     AngularFireModule.initializeApp({
